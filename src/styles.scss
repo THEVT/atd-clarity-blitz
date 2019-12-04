@@ -9,18 +9,12 @@
 // Buttons //
 /////////////
 
-.btn {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: center;
-  text-transform: initial;
-}
-.btn-primary {
-  border-radius: 18px;
-  background-color: #227fb8;
-}
+
+// Clarity Dependency SCSS
+@import "~@clr/ui/src/utils/dependencies.clarity"; // Includes light theme
+
+// ATD theme
+@import "./atd-theme.scss";
+
+// Clarity Component SCSS
+@import "~@clr/ui/src/utils/components.clarity";
