@@ -1,10 +1,5 @@
 /* Add application styles & imports to this file! */
 
-/********************************
-** New ATD Clarity theme - GLG **
-********************************/
-
-
 /////////////
 // Buttons //
 /////////////
@@ -13,8 +8,11 @@
 // Clarity Dependency SCSS
 @import "~@clr/ui/src/utils/dependencies.clarity"; // Includes light theme
 
-// ATD theme
-@import "./atd-theme.scss";
+// ATD theme variables
+@import "./atd-theme-variables.scss";
 
 // Clarity Component SCSS
 @import "~@clr/ui/src/utils/components.clarity";
+
+// ATD theme styles
+@import "./atd-theme-styles.scss";

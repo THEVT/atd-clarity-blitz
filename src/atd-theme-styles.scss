@@ -1,0 +1,85 @@
+/***************************
+- atd-theme.scsss contains variables that are being overwritten to be used in "clr/ui/src/utils/components.clarity"
+- This file contains the ATD Theme overwrites that were not able to be put in atd-theme.scss and need to go after "clr/ui/src/utils/components.clarity"
+
+Reasons for styles here include but not limited to:
+- Components don't contain the style or it is not in variable form so it can't be overwritten by the atd-theme.scss file.
+- No way to change styles in the components.clarity from atd-theme.scss without deviating from the logic of the styles.
+---- Example: In "_maps.clarity", h1,h2,h3,h4 calls for font-weight: $clr-typography-lightfont, but in the new atd-theme, it is calling for $clr-typography-regfont. We can't change $clr-typography-lightfont variable to now be regFont.
+- Clarity itself does overrides themselves so this isn't "counter" clarity
+*//////
+
+// - Global
+// - Alerts
+// - Badge
+// - Button
+// - Card
+// - Datagrid
+// - Dropdown
+// - Form, Input, Checkbox, Radio, Toggle
+// - Header
+// - Label
+// - Login
+// - Modal
+// - Nav
+// - Table
+// - Progress Bars
+// - Signpost
+// - Spinner
+// - Stack View
+// - Table
+// - Tabs
+// - Tooltip
+// - Tree View
+// - Typography
+// - Vertical Nav
+// - Wizard
+
+// All styles must be within a body tag. That's how Clarity has the hierarchy set up so to overwrite, these styles need it too. 
+body {
+
+/**********
+ * Typography
+ * Clarity uses the geometric sans-serif font, Metropolis.
+ *
+ * Usage:
+ * - ../typography/_typography.clarity.scss
+ * - ../data/datagrid/_datagrid.clarity.scss
+ */
+
+h1, h2, h3, h4, h5 {
+  font-weight: $clr-typography-regfont;
+}
+h6 {
+  font-family: $clr-font;
+  font-weight: $clr-typography-boldfont;
+}
+
+.p2, .p3, .p4, label {
+  font-family: $roboto-condensed;
+}
+
+.p2 {
+  font-weight: $clr-typography-boldfont;
+}
+
+// Clarity also has the .p classes by themsleves and also binded wit a p tag 
+
+p {
+  &.p2, &.p3, &.p4 {
+    font-family: $roboto-condensed;
+  }
+
+  &.p2 {
+    font-weight: $clr-typography-boldfont;
+  }
+}
+
+
+
+
+
+
+// End body {}
+}
+// End body {}

@@ -1,0 +1,79 @@
+/********************************
+** New ATD Clarity theme - GLG **
+********************************/
+
+// - Global
+// - Alerts
+// - Badge
+// - Button
+// - Card
+// - Datagrid
+// - Dropdown
+// - Form, Input, Checkbox, Radio, Toggle
+// - Header
+// - Label
+// - Login
+// - Modal
+// - Nav
+// - Table
+// - Progress Bars
+// - Signpost
+// - Spinner
+// - Stack View
+// - Table
+// - Tabs
+// - Tooltip
+// - Tree View
+// - Typography
+// - Vertical Nav
+// - Wizard
+
+////////////
+// Colors //
+////////////
+
+$ATD-dark-blue: #001a31;
+$ATD-blue: #227fb8;
+$ATD-blue-alt: #1b6593;
+$ATD-light-blue: #e3edf5;
+$ATD-gray-1: #414042;
+$ATD-gray-2: #6f6f6f;
+$ATD-gray-3: #b9b8b8;
+$ATD-gray-4: #e6e6e6;
+$ATD-off-white: #f4f4f4;
+$ATD-dark-red: #d63c24;
+
+
+/**********
+ * Typography
+ * Clarity uses the geometric sans-serif font, Metropolis.
+ *
+ * Usage:
+ * - ../typography/_typography.clarity.scss
+ * - ../data/datagrid/_datagrid.clarity.scss
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed&display=swap');
+
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+
+$clr-font: $roboto;
+$clr-altFont: $montserrat;
+
+$clr-h1-color: $ATD-dark-blue;
+$clr-h2-color: $ATD-blue;
+$clr-h3-color: $ATD-dark-blue;
+$clr-h4-color: $ATD-blue;
+$clr-h5-color: $ATD-gray-1;
+$clr-h6-color: $ATD-gray-1;
+
+$clr-p1-color: $ATD-gray-2;
+$clr-p2-color: $ATD-gray-1;
+$clr-p3-color: $ATD-gray-1;
+$clr-p4-color: $ATD-dark-blue;
+$clr-p5-color: $ATD-gray-2;
+$clr-p6-color: $ATD-dark-blue;
+$clr-p7-color: $ATD-gray-2;
+$clr-p8-color: $ATD-gray-2;
