@@ -355,15 +355,14 @@ $clr-stack-view-stack-block-expanded-text-color: $ATD-gray-1;
 
 
 /**********
- * Vertical Nav
- * This is a vertically-aligned navigational component.
+ * Tree View
+ * A tree is a hierarchical component that shows the visual representation of the parent-child relationship between
+ * nodes.
  *
- * Usage: ../layout/vertical-nav/_vertical-nav.clarity.scss
+ * Usage: ../data/tree-view/_tree-view.clarity.scss
  */
-$clr-vertical-nav-bg-color: $ATD-gray-4;
-$clr-vertical-nav-icon-active-color: $ATD-blue;
-//$clr-vertical-nav-item-active-color: $ATD-blue;
-// END Vertical Nav
+$clr-tree-node-caret-color: $ATD-gray-1;
+// END Tree View variables
 
 
 /**********
@@ -399,3 +398,25 @@ $clr-p5-color: $ATD-gray-2;
 $clr-p6-color: $ATD-dark-blue;
 $clr-p7-color: $ATD-gray-2;
 $clr-p8-color: $ATD-gray-2;
+
+
+/**********
+ * Vertical Nav
+ * This is a vertically-aligned navigational component.
+ *
+ * Usage: ../layout/vertical-nav/_vertical-nav.clarity.scss
+ */
+$clr-vertical-nav-bg-color: $ATD-gray-4;
+$clr-vertical-nav-icon-active-color: $ATD-blue;
+//$clr-vertical-nav-item-active-color: $ATD-blue;
+// END Vertical Nav
+
+
+/**********
+ * Wizard
+ * Wizards provide a way to go through a sequence of steps that form an end to end workflow..
+ *
+ * Usage: ../wizard/_wizard.clarity.scss
+ */
+// $clr-wizard-sidenav-bgcolor: #1b2a32;
+// END: Wizard
