@@ -12,10 +12,8 @@ Reasons for styles here include but not limited to:
 *//////
 
 // - Global
-// - Alerts
 // - Badge
 // - Button
-// - Card
 // - Datagrid
 // - Dropdown
 // - Form, Input, Checkbox, Radio, Toggle
@@ -42,43 +40,6 @@ Reasons for styles here include but not limited to:
 body {
 
 
-
-/**********
- * Typography
- * Clarity uses the geometric sans-serif font, Metropolis.
- *
- * Usage:
- * - ../typography/_typography.clarity.scss
- * - ../data/datagrid/_datagrid.clarity.scss
- */
-
-h1, h2, h3, h4, h5 {
-  font-weight: $clr-typography-regfont;
-}
-h6 {
-  font-family: $clr-font;
-  font-weight: $clr-typography-boldfont;
-}
-
-.p2, .p3, .p4, label, select {
-  font-family: $roboto-condensed;
-}
-
-.p2 {
-  font-weight: $clr-typography-boldfont;
-}
-
-// Clarity also has the .p classes by themsleves and also binded wit a p tag 
-
-p {
-  &.p2, &.p3, &.p4 {
-    font-family: $roboto-condensed;
-  }
-
-  &.p2 {
-    font-weight: $clr-typography-boldfont;
-  }
-}
 
 
 /*****************
@@ -115,23 +76,12 @@ p {
  */
 
  .btn {
-   border-radius: 18px;
-
-   &.btn-sm {
+  border-radius: 18px;
+  text-transform: initial;
+  &.btn-sm {
     border-radius: 12px;
-   }
+  }
  }
-
-
-/**********
- * Card
- * A card presents high-level information and can guide the user toward related actions and details. Use these variables
- * to change the look and feel of your cards.
- *
- * Usage: ../layout/_card.clarity.scss
- */
-
-// END: Card
 
 
 /**********
@@ -286,6 +236,43 @@ label>.badge, a.label>.badge {
  }
 // END: Table
 
+
+/**********
+ * Typography
+ * Clarity uses the geometric sans-serif font, Metropolis.
+ *
+ * Usage:
+ * - ../typography/_typography.clarity.scss
+ * - ../data/datagrid/_datagrid.clarity.scss
+ */
+
+h1, h2, h3, h4, h5 {
+  font-weight: $clr-typography-regfont;
+}
+h6 {
+  font-family: $clr-font;
+  font-weight: $clr-typography-boldfont;
+}
+
+.p2, .p3, .p4, label, select {
+  font-family: $roboto-condensed;
+}
+
+.p2 {
+  font-weight: $clr-typography-boldfont;
+}
+
+// Clarity also has the .p classes by themsleves and also binded wit a p tag 
+
+p {
+  &.p2, &.p3, &.p4 {
+    font-family: $roboto-condensed;
+  }
+
+  &.p2 {
+    font-weight: $clr-typography-boldfont;
+  }
+}
 
 /**********
  * Vertical Nav
