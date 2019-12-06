@@ -213,6 +213,25 @@ $clr-calendar-btn-color: $ATD-blue;
 // END: Datagrid
 
 
+
+/*********
+ * Dropdown
+ * A dropdown menu allows the user to choose an option or action from a contextual list. Use these variables to change
+ * the look-n-feel of your dropdowns.
+ *
+ * Usage: ../popover/dropdown/_dropdown.clarity.scss
+ */
+ $clr-dropdown-header-color: $ATD-dark-blue;
+ $clr-dropdown-item-text-color: $ATD-gray-2;
+ $clr-dropdown-text-color: $ATD-gray-2;
+ $clr-dropdown-active-text-color: $ATD-gray-2;
+ $clr-dropdown-bg-hover-color: $ATD-light-blue;
+ $clr-dropdown-selection-color: $ATD-light-blue;
+ $clr-dropdown-border-color: #ccc;
+ $clr-dropdown-divider-color: $ATD-gray-4;
+// END: Dropdown overrides
+
+
 /**********
  * Typography
  * Clarity uses the geometric sans-serif font, Metropolis.

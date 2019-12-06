@@ -146,6 +146,28 @@ p {
 // END: Card
 
 
+/*********
+ * Dropdown
+ * A dropdown menu allows the user to choose an option or action from a contextual list. Use these variables to change
+ * the look-n-feel of your dropdowns.
+ *
+ * Usage: ../popover/dropdown/_dropdown.clarity.scss
+ */
+
+.dropdown-menu {
+  .dropdown-divider {
+    margin: 0.4rem 0;
+  }
+  .dropdown-header {
+    padding: .25rem 0.5rem .25rem;
+  }
+}
+
+// END: Dropdown overrides
+
+
+
+
 // End body {}
 }
 // End body {}
