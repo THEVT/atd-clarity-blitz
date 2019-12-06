@@ -277,10 +277,10 @@ $clr-forms-border-color: #ccc;
  $clr-forms-checkbox-disabled-mark-color: $ATD-gray-2;
 
 // Radio
-//$clr-forms-radio-disabled-background-color: $ATD-gray-4;
+$clr-forms-radio-disabled-background-color: $ATD-gray-4;
 //$clr-forms-radio-disabled-mark-color: $ATD-gray-2;
-//$clr-forms-radio-disabled-shadow: $ATD-gray-4;
-$clr-forms-radio-selected-shadow: $ATD-blue;
+$clr-forms-radio-disabled-shadow: inset 0 0 0 0.25rem $ATD-gray-4;
+$clr-forms-radio-selected-shadow: inset 0 0 0 0.25rem $ATD-blue;
 
 /**********
  * Header

@@ -4,6 +4,7 @@
 
 Reasons for styles here include but not limited to:
 - Components don't contain the style or it is not in variable form so it can't be overwritten by the atd-theme.scss file.
+- It was way more complicated following the layers upon layers Clarity
 - No way to change styles in the components.clarity from atd-theme.scss without deviating from the logic of the styles.
 ---- Example: In "_maps.clarity", h1,h2,h3,h4 calls for font-weight: $clr-typography-lightfont, but in the new atd-theme, it is calling for $clr-typography-regfont. We can't change $clr-typography-lightfont variable to now be regFont.
 - Clarity itself does overrides themselves so this isn't "counter" clarity
@@ -198,6 +199,9 @@ p {
 // Checkbox
 
 // Radio
+.clr-radio-wrapper input[type='radio']:checked+label::before {
+    box-shadow: inset 0 0 0 0.25rem #227fb8;
+}
 
 // END: Forms overrides
 
