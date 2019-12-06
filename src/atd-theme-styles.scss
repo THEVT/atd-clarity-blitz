@@ -35,8 +35,11 @@ Reasons for styles here include but not limited to:
 // - Vertical Nav
 // - Wizard
 
+
 // All styles must be within a body tag. That's how Clarity has the hierarchy set up so to overwrite, these styles need it too. 
 body {
+
+
 
 /**********
  * Typography
@@ -76,8 +79,71 @@ p {
 }
 
 
+/*****************
+ * Badge
+ * Badges provide a method to highlight a count of an element either next to it or inside the element itself.
+ * Here you can set the background-color and font color(s) for the various badge types.
+ * There are five color options and four status types a Clarity label may have.
+ *
+ * Usage: ./_maps.clarity.scss
+ */
 
 
+
+ 
+
+/*****************
+ * Buttons
+ * Buttons allow an application to communicate action and direct user intent.
+ * Buttons can be: solid, outlined or flat.
+ * Solid and outline have four types: primary, success, warning, danger.
+ * Buttons can be disabled.
+ *
+ * For each button type, use these variables to change the following button properties:
+ * - background color
+ * - border
+ * - (font) color
+ * - :hover background-color
+ * - :hover (font) color
+ * - box-shadow color
+ *
+ *  NOTE: these variables also affect button groups.
+ *
+ * Usage: ./_maps.clarity.scss
+ */
+
+ .btn {
+   border-radius: 18px;
+
+   &.btn-sm {
+    border-radius: 12px;
+   }
+ }
+
+
+/**********
+ * Card
+ * A card presents high-level information and can guide the user toward related actions and details. Use these variables
+ * to change the look and feel of your cards.
+ *
+ * Usage: ../layout/_card.clarity.scss
+ */
+
+// END: Card
+
+
+/**********
+ * Checkboxes
+ * 
+ *
+ * Usage:
+ */
+
+ .clr-checkbox-wrapper label {
+   color: $ATD-gray-1;
+ }
+ 
+// END: Card
 
 
 // End body {}

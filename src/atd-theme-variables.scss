@@ -6,7 +6,6 @@
 // - Alerts
 // - Badge
 // - Button
-// - Card
 // - Datagrid
 // - Dropdown
 // - Form, Input, Checkbox, Radio, Toggle
@@ -28,6 +27,11 @@
 // - Vertical Nav
 // - Wizard
 
+/*********
+ * Global variables will have an effect on or in multiple Clarity components.
+ * Where possible, there is a list files affected by the variable.
+ */
+
 ////////////
 // Colors //
 ////////////
@@ -42,6 +46,164 @@ $ATD-gray-3: #b9b8b8;
 $ATD-gray-4: #e6e6e6;
 $ATD-off-white: #f4f4f4;
 $ATD-dark-red: #d63c24;
+$ATD-green: #62a420;
+
+
+/*********
+ * Name: Link (and link state colors)
+ * Description the color for links and the active, hovered and visited state
+ * Usages: ./_reboot.clarity.scss
+ */
+$clr-link-active-color: $ATD-blue;
+$clr-link-color: $ATD-blue;
+$clr-link-hover-color: $ATD-dark-blue;
+$clr-link-visited-color: $ATD-blue;
+// END: Global Clarity Variables
+
+
+/**********
+ * Alerts
+ * Alerts are banners that communicate a message with a severity attached to it. They grab the user’s attention to
+ * provide critical information needed in context. These variables control the background-color and font color for each
+ * of the alert types.
+ *
+ * There are seven types of alert and we set the background-color and font color for each here.
+ * Usage: ./_maps.clarity.scss
+ */
+
+$clr-alert-app-disabled-color: #6d7884;
+$clr-theme-alert-font-color: #e9ecef;
+//clr-theme-app-alert-font-color: $clr-black;
+
+// Info type
+$clr-alert-info-bg-color: $ATD-light-blue;
+
+// Success type
+$clr-alert-success-bg-color: #dff0d0;
+
+// Danger type
+$clr-alert-danger-bg-color: #f5dbd9;
+
+// Warning type
+$clr-alert-warning-bg-color: #feecb5;
+
+// App Info type
+$clr-app-alert-info-bg-color: $ATD-blue;
+
+/**********
+ * END: Alerts
+ */
+
+
+/*****************
+ * Badge
+ * Badges provide a method to highlight a count of an element either next to it or inside the element itself.
+ * Here you can set the background-color and font color(s) for the various badge types.
+ * There are five color options and four status types a Clarity label may have.
+ *
+ * Usage: ./_maps.clarity.scss
+ */
+$clr-badge-font-color: $gray-lightest;
+
+// Usage: ../utils/_maps.clarity.scss
+$clr-badge-font-color-contrast: $clr-black;
+
+$clr-badge-info-bg-color: #007cbb;
+
+$clr-badge-success-bg-color: $ATD-green;
+$clr-badge-warning-bg-color: #efd603;
+
+$clr-badge-purple-bg-color: #9460b8;
+$clr-badge-orange-bg-color: #f38b00;
+// END: Badge
+
+
+
+
+/*****************
+ * Buttons
+ * Buttons allow an application to communicate action and direct user intent.
+ * Buttons can be: solid, outlined or flat.
+ * Solid and outline have four types: primary, success, warning, danger.
+ * Buttons can be disabled.
+ *
+ * For each button type, use these variables to change the following button properties:
+ * - background color
+ * - border
+ * - (font) color
+ * - :hover background-color
+ * - :hover (font) color
+ * - box-shadow color
+ *
+ *  NOTE: these variables also affect button groups.
+ *
+ * Usage: ./_maps.clarity.scss
+ */
+
+// Default button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-default-disabled-color: $ATD-gray-2; // disabled-color
+
+// Default outline button
+$clr-btn-default-outline-disabled-color: $ATD-gray-2; // disabled-color
+
+// Primary button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-primary-bg-color: $ATD-blue; // background-color, disabled-background-color
+$clr-btn-primary-border-color: $ATD-blue; // border-color
+
+// Success button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-success-bg-color: $ATD-green; // background-color, border-color
+
+// Success outline button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-success-outline-color: $ATD-green; // color
+$clr-btn-success-outline-border-color: $ATD-green; // border-color, checked-background-color
+
+// Danger button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-danger-bg-color: $ATD-dark-red; // background-color, border-color
+
+// Danger outline button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-danger-outline-border-color: $ATD-dark-red; // border-color
+$clr-btn-danger-outline-color: $ATD-dark-red; // color
+$clr-btn-danger-outline-checked-bg-color: $ATD-dark-red; // checked-background-color
+
+// Link button colors
+// Usage: ../utils/_maps.clarity.scss
+$clr-btn-link-color: $ATD-blue; // color
+
+// END: Buttons
+
+
+/**********
+ * Checkboxes
+ * 
+ *
+ * Usage:
+ */
+ $clr-forms-checkbox-background-color: $ATD-blue;
+ $clr-forms-checkbox-disabled-background-color: $ATD-gray-4;
+ $clr-forms-checkbox-disabled-mark-color: $ATD-gray-2;
+
+// END: Checkboxes
+
+
+/**********
+ * Date Picker
+ * 
+ *
+ * Usage:
+ */
+$clr-calendar-btn-color: $ATD-blue;
+
+
+// END: Date Picker
+
+
+
 
 
 /**********
