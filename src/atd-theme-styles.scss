@@ -60,7 +60,7 @@ h6 {
   font-weight: $clr-typography-boldfont;
 }
 
-.p2, .p3, .p4, label {
+.p2, .p3, .p4, label, select {
   font-family: $roboto-condensed;
 }
 
@@ -195,7 +195,15 @@ p {
 .clr-input {
   font-family: $roboto-condensed;
 }
+
 // Select
+.clr-subtext {
+    margin-top: .4rem;
+}
+
+.clr-select-wrapper select, .clr-multiselect-wrapper select {
+    padding: 0 1.6rem 0 .25rem;
+}
 
 // Checkbox
 
