@@ -4,9 +4,10 @@
 
 Reasons for styles here include but not limited to:
 - Components don't contain the style or it is not in variable form so it can't be overwritten by the atd-theme.scss file.
-- It was way more complicated following the layers upon layers Clarity
 - No way to change styles in the components.clarity from atd-theme.scss without deviating from the logic of the styles.
 ---- Example: In "_maps.clarity", h1,h2,h3,h4 calls for font-weight: $clr-typography-lightfont, but in the new atd-theme, it is calling for $clr-typography-regfont. We can't change $clr-typography-lightfont variable to now be regFont.
+- It's way more complicated following the layers upon layers Clarity has for some of their sass variables then just right one override. Some variables can go 4+ layers deep. 
+---- Example: Just want to change background color on a radio button but to find the orgin of the background color, this is the connect dots of variables you have to follow: $clr-forms-radio-selected-shadow takes from $clr-forms-checkbox-checked-shadow which contains $clr-forms-checkbox-background-color which is set to $clr-action-blue and that lives in colors and is set to #0079b8.
 - Clarity itself does overrides themselves so this isn't "counter" clarity
 *//////
 
@@ -199,8 +200,19 @@ p {
 // Checkbox
 
 // Radio
-.clr-radio-wrapper input[type='radio']:checked+label::before {
-    box-shadow: inset 0 0 0 0.25rem #227fb8;
+.clr-radio-wrapper input[type='radio']+label::before {
+  border-color: $ATD-gray-2;
+}
+
+.clr-form-control-disabled {
+  .clr-radio-wrapper input[type='radio']+label::before {
+    border: $ATD-gray-4;
+    background: $ATD-gray-4;
+    box-shadow: inset 0 0 0 0.25rem $ATD-gray-4;
+  }
+  .clr-radio-wrapper input[type='radio']:checked+label::before {
+    background: $ATD-gray-1;
+  }
 }
 
 // END: Forms overrides
