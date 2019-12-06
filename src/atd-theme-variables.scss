@@ -32,9 +32,13 @@
  * Where possible, there is a list files affected by the variable.
  */
 
-////////////
-// Colors //
-////////////
+
+/**********
+ * Colors
+ * 
+ *
+ * Usage: ./_colors.clarity.scss
+ */
 
 $ATD-dark-blue: #001a31;
 $ATD-blue: #227fb8;
@@ -47,6 +51,13 @@ $ATD-gray-4: #e6e6e6;
 $ATD-off-white: #f4f4f4;
 $ATD-dark-red: #d63c24;
 $ATD-green: #62a420;
+$ATD-Yellow: #efd603;
+$ATD-purple: #9460b8;
+$ATD-orange: #f38b00;
+
+$clr-action-purple-light-midtone: $ATD-purple;
+$clr-yellow-light-midtone: $ATD-orange;
+// END: Colors
 
 
 /*********
@@ -111,10 +122,10 @@ $clr-badge-font-color-contrast: $clr-black;
 $clr-badge-info-bg-color: #007cbb;
 
 $clr-badge-success-bg-color: $ATD-green;
-$clr-badge-warning-bg-color: #efd603;
+$clr-badge-warning-bg-color: $ATD-Yellow;
 
-$clr-badge-purple-bg-color: #9460b8;
-$clr-badge-orange-bg-color: #f38b00;
+$clr-badge-purple-bg-color: $ATD-purple;
+$clr-badge-orange-bg-color: $ATD-orange;
 // END: Badge
 
 
@@ -241,12 +252,13 @@ $clr-calendar-btn-color: $ATD-blue;
  */
 
 //GENERIC
+$clr-forms-label-color: $ATD-dark-blue;
+$clr-forms-text-color: $ATD-gray-1;
 $clr-forms-invalid-color: $ATD-dark-red;
+$clr-forms-subtext-color: $ATD-gray-2;
 $clr-forms-border-color: #ccc;
 
-// Textarea
-$clr-forms-textarea-background-color: #17242b;
-
+/*
 // Select
 // TODO: Properly map these to updated dark theme design
 // NOTE: The new form selects seemed to be working like the deprecated form selects so I'm leaving
@@ -263,14 +275,66 @@ $clr-forms-textarea-background-color: #17242b;
  $clr-forms-checkbox-background-color: $ATD-blue;
  $clr-forms-checkbox-disabled-background-color: $ATD-gray-4;
  $clr-forms-checkbox-disabled-mark-color: $ATD-gray-2;
-/*
+
 // Radio
-$clr-forms-radio-label-color: #adbbc4;
-$clr-forms-radio-selected-shadow: $clr-forms-checkbox-checked-shadow;
-$clr-forms-radio-focused-shadow: 0 0 $clr-outline-blur $clr-outline-spread $clr-outline-color;
-$clr-forms-radio-disabled-background-color: $clr-form-disabled-background-color;
-$clr-forms-radio-disabled-mark-color: $clr-forms-checkbox-disabled-mark-color;
-$clr-forms-radio-disabled-shadow: $clr-forms-checkbox-checked-shadow;
+//$clr-forms-radio-disabled-background-color: $ATD-gray-4;
+//$clr-forms-radio-disabled-mark-color: $ATD-gray-2;
+//$clr-forms-radio-disabled-shadow: $ATD-gray-4;
+$clr-forms-radio-selected-shadow: $ATD-blue;
+
+/**********
+ * Header
+ * Headers provide branding, navigation, search, and access to global application actions such as settings and
+ * notifications. There are five header colors in the dark theme.
+ *
+ * Usage: ../layout/nav/_header.clarity.scss
+ * -
+ */
+$clr-header-bgColor: $ATD-dark-blue;
+$clr-header-default-bg-color: $clr-header-bgColor;
+$clr-header-1-bg-color: $clr-header-bgColor;
+// END Header overrides
+
+
+
+/**********
+ * Header
+ * Headers provide branding, navigation, search, and access to global application actions such as settings and
+ * notifications. There are five header colors in the dark theme.
+ *
+ * Usage: ../layout/nav/_header.clarity.scss
+ * -
+ */
+$clr-header-bgColor: #404e60;
+$clr-header-default-bg-color: $clr-header-bgColor;
+$clr-header-1-bg-color: $clr-header-bgColor;
+// END Header overrides
+
+/**********
+ * Icons
+ * Icons by default are presentational only meaning they do not provide any context to screen readers
+ *
+ * Usage: ./_icons.clarity.scss
+ */
+$clr-icon-color-success: $ATD-dark-red;
+$clr-icon-color-error: $ATD-dark-red;
+$clr-icon-color-warning: $ATD-Yellow;
+// END: Icons
+
+
+/*****************
+ * Label
+ * Labels show concise metadata in a compact format. Here you can set the background-color and font color(s) for the
+ * different types of labels.
+ *
+ * There are five color options and four status types a Clarity label may have.
+
+ * Usage: ./_maps.clarity.scss$ATD-orange
+ */
+ $clr-label-orange-bg-color: $ATD-orange;
+ $clr-label-purple-bg-color: $ATD-purple;
+ $clr-label-info-bg-color: #e1f1f6;
+// END: Labels
 
 
 /**********

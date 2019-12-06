@@ -168,6 +168,61 @@ p {
 
 
 
+
+/******
+ * Forms: TODO: track down component usages and names
+ * A form is a structured layout of related input components.
+ * There are a variety of variables used to change form elements, including:
+ *
+ * Usage:
+ * ../forms/styles/_checkbox.clarity.scss
+ * ../forms/styles/_containers.clarity.scss
+ * ../forms/styles/_file.clarity.scss
+ * ../forms/styles/_form.clarity.scss
+ * ../forms/styles/_input.clarity.scss
+ * ../forms/styles/_input-group.clarity.scss
+ * ../forms/styles/_mixings.forms.scss
+ * ../forms/styles/radio.clarity.scss
+ * ../forms/styles/_select.clarity.scss
+ * ../forms/styles/_textarea.clarity.scss
+ * ../forms/styles/_variables.clarity.scss
+ *
+ */
+
+// GENERIC
+.clr-input {
+  font-family: $roboto-condensed;
+}
+// Select
+
+// Checkbox
+
+// Radio
+
+// END: Forms overrides
+
+
+/*****************
+ * Label
+ * Labels show concise metadata in a compact format. Here you can set the background-color and font color(s) for the
+ * different types of labels.
+ *
+ * There are five color options and four status types a Clarity label may have.
+
+ * Usage: ./_maps.clarity.scss$ATD-orange
+ */
+
+ .label, a.label {
+       padding: 0 .5rem 0px;
+ }
+
+label>.badge, a.label>.badge {
+    margin: 0 -0.39rem 0 0.25rem;
+}
+
+// END: Labels
+
+
 // End body {}
 }
 // End body {}

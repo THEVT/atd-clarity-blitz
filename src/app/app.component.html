@@ -1,5 +1,5 @@
 <div class="main-container">
-	<header class="header-2">
+	<header class="header-1">
 		<div class="branding">
 			<a class="nav-link">
 				<clr-icon shape="home" size="24"></clr-icon>
@@ -395,6 +395,219 @@
         Forms
       ---------------->
       <h2>Forms</h2>
+
+
+      <!--------------- 
+        Inputs
+      ---------------->
+      <h2>Inputs</h2>
+
+      <div>
+        <form clrForm>
+          <input clrInput placeholder="My input" name="input" [(ngModel)]="input" />
+        </form>
+      </div>
+
+      <div>
+        <form clrForm>
+          <clr-input-container>
+            <label>Full name</label>
+            <input placeholder="Full name" clrInput [(ngModel)]="exampleThree" name="name" required />
+            <clr-control-helper>Helper text</clr-control-helper>
+            <clr-control-error>This field is required!</clr-control-error>
+          </clr-input-container>
+        </form>
+      </div>
+
+      <div>
+        <form class="clr-form">
+          <div class="clr-form-control">
+            <label for="example" class="clr-control-label">Label</label>
+            <div class="clr-control-container clr-error">
+              <div class="clr-input-wrapper">
+                <input type="text" id="example" placeholder="Example Input" class="clr-input">
+                <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+              </div>
+              <span class="clr-subtext">Error message</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <!--------------- 
+        Labels
+      ---------------->
+      <h2>Labels</h2>
+
+      <div>
+        <a href="..." class="label label-purple clickable">
+            Austin
+        </a>
+        <a href="..." class="label label-blue clickable">
+            New York
+        </a>
+        <a href="..." class="label label-orange clickable">
+            Palo Alto
+        </a>
+        <a href="..." class="label label-light-blue clickable">
+            San Francisco
+        </a>
+        <a href="..." class="label clickable">
+            Seattle
+        </a>
+      </div>
+
+      <div>
+        <span class="label label-info">Info</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Error</span>
+      </div>
+
+      <div>
+        <a href="..." class="label label-purple clickable">
+            Austin
+            <span class="badge">1</span>
+        </a>
+        <a href="..." class="label label-blue clickable">
+            New York
+            <span class="badge">2</span>
+        </a>
+        <a href="..." class="label label-orange clickable">
+            Palo Alto
+            <span class="badge">3</span>
+        </a>
+        <a href="..." class="label label-light-blue clickable">
+            San Francisco
+            <span class="badge">12</span>
+        </a>
+        <a href="..." class="label clickable">
+            Seattle
+            <span class="badge">15</span>
+        </a>
+        <a href="..." class="label label-purple clickable">
+            Chicago
+            <span class="badge">55</span>
+        </a>
+        <a href="..." class="label label-blue clickable">
+            San Jose
+            <span class="badge">66</span>
+        </a>
+        <a href="..." class="label label-orange clickable">
+            Charlotte
+            <span class="badge">88</span>
+        </a>
+        <a href="..." class="label label-light-blue clickable">
+            Atlanta
+            <span class="badge">99+</span>
+        </a>
+        <a href="..." class="label clickable">
+            Philadephia<span class="badge">0</span>
+        </a>
+      </div>
+
+
+      <!--------------- 
+        Progress bar
+      ---------------->
+      <h2>Progress Bar</h2>
+
+      <div class="progress demo">
+          <progress max="100" value="50" data-displayval="0%"></progress>
+      </div>
+
+
+      <!--------------- 
+        Radio buttons
+      ---------------->
+      <h2>Progress Bar</h2>
+
+      <div>
+        <clr-radio-container>
+          <label>Full radio</label>
+          <clr-radio-wrapper>
+            <input type="radio" clrRadio name="options" required value="option5" [(ngModel)]="options" />
+            <label>Option 1</label>
+          </clr-radio-wrapper>
+          <clr-radio-wrapper>
+            <input type="radio" clrRadio name="options" required value="option6" [(ngModel)]="options" />
+            <label>Option 2</label>
+          </clr-radio-wrapper>
+          <clr-control-helper>Helper text</clr-control-helper>
+          <clr-control-error>This field is required!</clr-control-error>
+        </clr-radio-container>
+      </div>
+
+      <div>
+        <clr-radio-container>
+          <label>Disabled radio radio</label>
+          <clr-radio-wrapper>
+            <input type="radio" clrRadio name="options" required value="option1" [(ngModel)]="options" />
+            <label>Option 1</label>
+          </clr-radio-wrapper>
+          <clr-radio-wrapper>
+            <input type="radio" clrRadio name="options" required value="option2" [(ngModel)]="options" />
+            <label>Option 2</label>
+          </clr-radio-wrapper>
+          <clr-control-helper>Helper text</clr-control-helper>
+          <clr-control-error>This field is required!</clr-control-error>
+        </clr-radio-container>
+      </div>
+
+      <div>
+        <clr-radio-container>
+          <label>Disabled radio example</label>
+          <clr-radio-wrapper>
+            <input type="radio" clrRadio name="options" value="option1" [(ngModel)]="options" disabled />
+            <label>Option 1</label>
+          </clr-radio-wrapper>
+          <clr-radio-wrapper>
+            <input type="radio" clrRadio name="options" value="option2" [(ngModel)]="options" disabled />
+            <label>Option 2</label>
+          </clr-radio-wrapper>
+          <clr-control-helper>Helper text</clr-control-helper>
+        </clr-radio-container>
+      </div>
+
+      <div>
+        <div class="clr-form-control">
+          <label class="clr-control-label">Basic radio</label>
+          <div class="clr-control-container clr-error">
+            <div class="clr-radio-wrapper">
+              <input type="radio" id="vertical-radio1" name="radio-error" value="option1" class="clr-radio">
+              <label for="vertical-radio1" class="clr-control-label">option 1</label>
+            </div>
+            <div class="clr-radio-wrapper">
+              <input type="radio" id="vertical-radio2" name="radio-error" value="option2" class="clr-radio">
+              <label for="vertical-radio2" class="clr-control-label">option 2</label>
+            </div>
+            <div class="clr-radio-wrapper">
+              <input type="radio" id="vertical-radio3" name="radio-error" value="option3" class="clr-radio">
+              <label for="vertical-radio3" class="clr-control-label">option 3</label>
+            </div>
+            <div class="clr-subtext-wrapper">
+              <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+              <span class="clr-subtext">Error message</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      </div>
+
+      <div>
+      </div>
+
+      <div>
+      </div>
+
+      <div>
+      </div>
+
+      <div>
+      </div>
 
 		</div>
 
