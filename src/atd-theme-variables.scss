@@ -258,19 +258,8 @@ $clr-forms-invalid-color: $ATD-dark-red;
 $clr-forms-subtext-color: $ATD-gray-2;
 $clr-forms-border-color: #ccc;
 
-/*
 // Select
-// TODO: Properly map these to updated dark theme design
-// NOTE: The new form selects seemed to be working like the deprecated form selects so I'm leaving
-//       these commented out for now.
-//$clr-forms-select-hover-background: rgba(221, 221, 221, 0.5); // CAN WE KEY THIS FROM A KNOWN COLOR
-//$clr-forms-select-caret-hover-color: $gray-dark;
-//$clr-forms-select-caret-color: $gray-dark-midtone;
-//$clr-forms-select-option-color: $clr-forms-text-color;
-//$clr-forms-select-multiple-background-color: $clr-white;
-//$clr-forms-select-multiple-border-color: $gray-light-midtone;
-//$clr-forms-select-multiple-option-color: $clr-forms-text-color;
-*/
+
 // Checkbox
  $clr-forms-checkbox-background-color: $ATD-blue;
  $clr-forms-checkbox-disabled-background-color: $ATD-gray-4;
@@ -335,6 +324,46 @@ $clr-icon-color-warning: $ATD-Yellow;
  $clr-label-purple-bg-color: $ATD-purple;
  $clr-label-info-bg-color: #e1f1f6;
 // END: Labels
+
+
+
+
+/*********
+ * Stack View
+ * A stack view displays key/value pairs, which users can expand to show more detail.
+ *
+ * Usage: ../data/stack-view/_stack-view.clarity.scss
+ */
+$clr-stack-view-stack-block-label-text-color: $ATD-gray-1;
+$clr-stack-view-stack-block-expanded-text-color: $ATD-gray-1;
+
+// END: Stack View overrides
+
+
+
+/**********
+ * Table
+ * Use the table styles wherever you need to present static data in a tabular format.
+ *
+ * Usage:
+ * - ../data/_tables.clarity.scss
+ * - ../data/datagrid/_datagrid.clarity.scss
+ */
+ 
+// END: Table
+
+
+
+/**********
+ * Vertical Nav
+ * This is a vertically-aligned navigational component.
+ *
+ * Usage: ../layout/vertical-nav/_vertical-nav.clarity.scss
+ */
+$clr-vertical-nav-bg-color: $ATD-gray-4;
+$clr-vertical-nav-icon-active-color: $ATD-blue;
+//$clr-vertical-nav-item-active-color: $ATD-blue;
+// END Vertical Nav
 
 
 /**********

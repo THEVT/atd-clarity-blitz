@@ -616,7 +616,229 @@
         </div>
       </div>
 
+
+      <!--------------- 
+        Sign post
+      ---------------->
+      <h2>Sign post</h2>
+      <div class="signpost-triggers-wrapper">
+          <div class="signpost-trigger-demo">
+              <div class="signpost-item">
+                  <h6>Button Link</h6>
+                  <div class="trigger-item">
+                      <clr-signpost>
+                          <button class="btn btn-link" 
+                                  clrSignpostTrigger>
+                                      Button Link Trigger
+                          </button>
+                          <clr-signpost-content [clrPosition]="'top-middle'" *clrIfOpen>
+                            <h4>Signpost title</h4>
+                              <p>Lorem ipsum...</p>
+                          </clr-signpost-content>
+                      </clr-signpost>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!--------------- 
+        Stack view
+      ---------------->
+      <h2>Stack view</h2>
+
       <div>
+        <clr-stack-view>
+            <clr-stack-header>Angular stack view</clr-stack-header>
+
+            <clr-stack-block>
+                <clr-stack-label>Label 1</clr-stack-label>
+                <clr-stack-content>Content 1</clr-stack-content>
+            </clr-stack-block>
+
+            <clr-stack-block [clrSbExpanded]="true">
+                <clr-stack-label>Label 2</clr-stack-label>
+                <clr-stack-content>Content 2</clr-stack-content>
+                <clr-stack-block>
+                    <clr-stack-label>Sub-label 1</clr-stack-label>
+                    <clr-stack-content>Sub-content 1</clr-stack-content>
+                </clr-stack-block>
+                <clr-stack-block>
+                    <clr-stack-label>Sub-label 2</clr-stack-label>
+                    <clr-stack-content>Sub-content 2</clr-stack-content>
+                </clr-stack-block>
+                <clr-stack-block>
+                    <clr-stack-label>Sub-label 3</clr-stack-label>
+                    <clr-stack-content>Sub-content 3</clr-stack-content>
+                </clr-stack-block>
+            </clr-stack-block>
+
+            <clr-stack-block>
+                <clr-stack-label>Label 3</clr-stack-label>
+                <clr-stack-content>Content 3</clr-stack-content>
+                <clr-stack-block>
+                    <clr-stack-label>Sub-label 4</clr-stack-label>
+                    <clr-stack-content>Sub-content 4</clr-stack-content>
+                </clr-stack-block>
+                <clr-stack-block>
+                    <clr-stack-label>Sub-label 5</clr-stack-label>
+                    <clr-stack-content>Sub-content 5</clr-stack-content>
+                </clr-stack-block>
+            </clr-stack-block>
+        </clr-stack-view>
+      </div>
+
+
+      <!--------------- 
+        Tables
+      ---------------->
+      <h2>Tables</h2>
+
+      <div>
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th class="left">Wizard</th>
+                      <th>Allegiance</th>
+                      <th>Triwizard Champion?</th>
+                      <th>Can Cast Fireball</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td class="left">Harry</td>
+                      <td>Gryffindor</td>
+                      <td>Yes</td>
+                      <td>No</td>
+                  </tr>
+                  <tr>
+                      <td class="left">Gandalf</td>
+                      <td>Hobbits</td>
+                      <td>Maybe?</td>
+                      <td>I don&apos;t think so...</td>
+                  </tr>
+                  <tr>
+                      <td class="left">Obi-Wan Kenobi</td>
+                      <td>Republic/Rebellion</td>
+                      <td>No</td>
+                      <td>No</td>
+                  </tr>
+                  <tr>
+                      <td class="left">Merlin</td>
+                      <td>King Arthur</td>
+                      <td>Probably invented the tournament</td>
+                      <td>Solid maybe</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <div>
+        <table class="table table-compact">
+            <thead>
+                <tr>
+                    <th class="left">Monster</th>
+                    <th>Home</th>
+                    <th>Likes Cookies</th>
+                    <th class="left">Fun to Play With</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left">Wolfman</td>
+                    <td>Nondisclosed countryside</td>
+                    <td>Sometimes</td>
+                    <td class="left">Not really</td>
+                </tr>
+                <tr>
+                    <td class="left">Mothra</td>
+                    <td>Tropical island</td>
+                    <td>No</td>
+                    <td class="left">Only if you have a flashlight</td>
+                </tr>
+                <tr>
+                    <td class="left">Oscar the Grouch</td>
+                    <td>Sesame Street</td>
+                    <td>No</td>
+                    <td class="left">No</td>
+                </tr>
+                <tr>
+                    <td class="left">Cookie Monster</td>
+                    <td>Sesame Street</td>
+                    <td>Definitely yes</td>
+                    <td class="left">Only if you have no cookies</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+
+
+      <!--------------- 
+        Text area
+      ---------------->
+      <h2>Text area</h2>
+
+      <div>
+        <form clrForm>
+          <clr-textarea-container>
+            <label>Label</label>
+            <textarea clrTextarea [(ngModel)]="description" name="description" required></textarea>
+            <clr-control-helper>Helper text</clr-control-helper>
+            <clr-control-error>You must provide a description!</clr-control-error>
+          </clr-textarea-container>
+        </form>
+      </div>
+
+      <div>
+        <form class="clr-form">
+          <div class="clr-form-control">
+            <label for="textarea-basic-error" class="clr-control-label">Basic textarea, error</label>
+            <div class="clr-control-container clr-error">
+              <div class="clr-textarea-wrapper">
+                <textarea id="textarea-basic-error" placeholder="Enter value here" class="clr-textarea"></textarea>
+                <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+              </div>
+              <span class="clr-subtext">Error message</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <!--------------- 
+        Toggle
+      ---------------->
+      <h2>Toggle switch</h2>
+
+      <div>
+        <clr-toggle-container>
+          <label>Full toggle switch</label>
+          <clr-toggle-wrapper>
+            <input type="checkbox" clrToggle name="options" required value="option1" [(ngModel)]="options" />
+            <label>Option 1</label>
+          </clr-toggle-wrapper>
+          <clr-toggle-wrapper>
+            <input type="checkbox" clrToggle name="options" required value="option2" [(ngModel)]="options" />
+            <label>Option 2</label>
+          </clr-toggle-wrapper>
+          <clr-control-helper>Helper text</clr-control-helper>
+          <clr-control-error>This field is required!</clr-control-error>
+        </clr-toggle-container>
+      </div>
+
+      <div>
+        <clr-toggle-container>
+          <label>Disabled toggle switch example</label>
+          <clr-checkbox-wrapper>
+            <input type="checkbox" clrToggle name="options" value="option1" [(ngModel)]="options" disabled />
+            <label>Option 1</label>
+          </clr-checkbox-wrapper>
+          <clr-checkbox-wrapper>
+            <input type="checkbox" clrToggle name="options" value="option2" [(ngModel)]="options" disabled />
+            <label>Option 2</label>
+          </clr-checkbox-wrapper>
+          <clr-control-helper>Helper text</clr-control-helper>
+        </clr-toggle-container>
       </div>
 
       <div>
@@ -633,32 +855,68 @@
 
 		</div>
 
-    <clr-vertical-nav>
-    <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
-        <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
-        Normal
-    </a>
-    <a clrVerticalNavLink routerLink="./electric" routerLinkActive="active">
-        <clr-icon clrVerticalNavIcon shape="bolt"></clr-icon>
-        Electric
-    </a>
-    <a clrVerticalNavLink routerLink="./poison" routerLinkActive="active">
-        <clr-icon clrVerticalNavIcon shape="sad-face"></clr-icon>
-        Poison
-    </a>
-    <a clrVerticalNavLink routerLink="./grass" routerLinkActive="active">
-        <clr-icon clrVerticalNavIcon shape="bug"></clr-icon>
-        Grass
-    </a>
-    <a clrVerticalNavLink routerLink="./fighting" routerLinkActive="active">
-        <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
-        Fighting
-    </a>
-    <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">
-        <clr-icon clrVerticalNavIcon shape="certificate"></clr-icon>
-        Credit
-    </a>
-</clr-vertical-nav>
+    <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]="collapsed">
+        <clr-vertical-nav-group
+                routerLinkActive="active">
+            <clr-icon shape="user" clrVerticalNavIcon></clr-icon>
+            Normal
+            <clr-vertical-nav-group-children>
+                <a clrVerticalNavLink
+                  routerLink="./normal/pidgey"
+                  routerLinkActive="active">
+                    Pidgey
+                </a>
+                <a clrVerticalNavLink
+                  routerLink="./normal/snorlax"
+                  routerLinkActive="active">
+                    Snorlax
+                </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="active">
+            <clr-icon shape="flame" clrVerticalNavIcon></clr-icon>
+            Fire
+            <clr-vertical-nav-group-children>
+                <a clrVerticalNavLink
+                  routerLink="./fire/charmander"
+                  routerLinkActive="active">
+                    Charmander
+                </a>
+                <a clrVerticalNavLink
+                  routerLink="./fire/charizard"
+                  routerLinkActive="active">
+                    Charizard
+                </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        <clr-vertical-nav-group
+                routerLinkActive="active">
+            <clr-icon shape="bolt" clrVerticalNavIcon></clr-icon>
+            Electric
+            <clr-vertical-nav-group-children>
+                <a clrVerticalNavLink
+                  routerLink="./electric/pikachu"
+                  routerLinkActive="active">
+                    Pikachu
+                </a>
+                <a clrVerticalNavLink
+                  routerLink="./electric/raichu"
+                  routerLinkActive="active">
+                    Raichu
+                </a>
+            </clr-vertical-nav-group-children>
+        </clr-vertical-nav-group>
+        
+        <a clrVerticalNavLink routerLink="./grass" routerLinkActive="active">
+            <clr-icon clrVerticalNavIcon shape="bug"></clr-icon>
+            Grass
+        </a>
+        <a clrVerticalNavLink routerLinkActive="active" routerLink="./credit">
+            <clr-icon shape="certificate" clrVerticalNavIcon></clr-icon>
+            Credit
+        </a>
+    </clr-vertical-nav>
 
 	</div>
 </div>

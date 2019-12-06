@@ -247,6 +247,64 @@ label>.badge, a.label>.badge {
 // END: Labels
 
 
+/*********
+ * Stack View
+ * A stack view displays key/value pairs, which users can expand to show more detail.
+ *
+ * Usage: ../data/stack-view/_stack-view.clarity.scss
+ */
+.stack-view {
+  font-family: $roboto-condensed;
+
+  .stack-block-label {
+    font-weight: 600
+  }
+}
+// END: Stack View overrides
+
+
+
+/**********
+ * Table
+ * Use the table styles wherever you need to present static data in a tabular format.
+ *
+ * Usage:
+ * - ../data/_tables.clarity.scss
+ * - ../data/datagrid/_datagrid.clarity.scss
+ */
+ .table {
+   font-family: $roboto-condensed;
+
+   th {
+     font-size: .5rem;
+   }
+
+   td {
+    border-left: 1px solid $ATD-gray-4;
+    border-right: 1px solid $ATD-gray-4;
+   }
+ }
+// END: Table
+
+
+/**********
+ * Vertical Nav
+ * This is a vertically-aligned navigational component.
+ *
+ * Usage: ../layout/vertical-nav/_vertical-nav.clarity.scss
+ */
+.clr-vertical-nav {
+  .nav-trigger {
+    background-color: rgba(111, 111, 111, 0.2);
+  }
+
+  .nav-link.active {
+    color: $ATD-blue;
+  }
+}
+// END Vertical Nav
+
+
 // End body {}
 }
 // End body {}
